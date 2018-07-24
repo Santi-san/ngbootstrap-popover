@@ -1,0 +1,20 @@
+<ng-template #popContent>
+  <h3>header</h3>
+  <p>this is the body tag</p>
+
+  <div class="tot">
+    <button class="btn btn-primary" (click)="p.close()">cancel</button>
+    <button class="btn btn-danger">save</button>
+  </div>
+  
+    
+
+</ng-template>
+
+
+
+
+<button #p="ngbPopover" type="button" id="but" class="btn btn-outline-secondary mr-2" placement="top" [popclose]="p" [ngbPopover]="popContent"
+  popoverTitle="Popover on top">
+  Popover on top
+</button>
